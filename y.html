@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root{
+        --bg-color: #222327;
+        --text-color: #fff;
+        --main-color: #66eaff;}
+        .container{
+          height: 100vh;
+          width: 100%;
+          padding: 0 8%;
+      }
+      body{
+        background-color:#073460;
+      }
+      
+      .container h1{
+          position: relative;
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 60px;
+      }
+      
+      .container h1::after{
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -5px;
+          transform: translateX(-50%);
+          width: 100px;
+          height: 5px;
+          background: var(--main-color);
+      }
+      
+      .container .row{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 30px;
+      }   
+      .container .row .service{
+          padding : 25px 10px;
+          text-align: center;
+          border-radius: 5px;
+          transition: transform .5s;
+          cursor: pointer;
+          font-size: 14px;
+      }
+      
+      .container .row .service:hover{
+          transform: scale(1.1);
+          background: var(--main-color);
+          color: black;
+          
+      }
+      
+      .container .row .service i{
+          font-size: 40px;
+          margin-bottom: 10px;
+          
+      }
+      
+      .container .row .service h2{
+          margin-bottom: 8px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Services</h1>
+        <div class="row">
+          <div class="service">
+            <i class="bx bx-laptop"><img src="i3.png" alt=""></i>
+            
+            <h2>Web Design</h2>
+            <p>Web design involves creating the visual elements and layout of a website</p>
+          </div>
+          <div class="service">
+            <i class="bx bx-code-alt" > <img src="i4.png" alt=""></i>
+            <h2>Web Deverlopment</h2>
+            <p>Web development, also known as website development, refers to the tasks associated with creating, building</p>
+          </div>
+          <div class="service">
+            <i class="bx bx-desktop" ><img src="i2.png" alt=""></i>
+            <h2>graphic design</h2>
+            <p>Web design involves creating the visual elements and layout of a website</p>
+          </div>
+          <div class="service">
+            <i class="bx bx-mobile" ></i>
+            <h2>Mobile Deverlopment</h2>
+            <p>
+              App development, also referred to as app creation, is the intricate process of building computer programs. </p>
+          </div>
+          <div class="service">
+            <i class="bx bx-laptop"></i>
+            <h2>Web Design</h2>
+            <p>Web design involves creating the visual elements and layout of a website</p>
+          </div>
+          <div class="service">
+            <i class="bx bx-laptop"></i>
+            <h2>Web Design</h2>
+            <p>Web design involves creating the visual elements and layout of a website</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
